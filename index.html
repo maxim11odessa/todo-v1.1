@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>TODO APP v1-1</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>TODO APP v1-1</h1>
+      </header>
+      <main>
+        <section class="input-sec">
+          <input name="userinput" type="text" data-input />
+          <button class="btn" data-add-btn>ADD</button>
+          <button class="btn" data-clear-btn>CLEAR</button>
+        </section>
+        <section class="filter"></section>
+        <section class="todos-box" data-todo-box></section>
+      </main>
+      <template class="template" data-todo-list>
+        <div class="block">
+          <span data-templ-item></span>
+        </div>
+      </template>
+    </div>
+  </body>
 </html>
